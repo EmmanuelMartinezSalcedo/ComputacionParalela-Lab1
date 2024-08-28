@@ -6,32 +6,6 @@
 
 using namespace std;
 
-// vector<vector<int>> blocked(const vector<vector<int>>& A, const vector<vector<int>>& B, int blockSize) {
-//   int n1 = A.size();
-//   int m1 = A[0].size();
-//   int n2 = B.size();
-//   int m2 = B[0].size();
-
-//   vector<vector<int>> C(n1, vector<int>(m2, 0));
-
-//   for (int i = 0; i < n1; i += blockSize) {
-//     for (int j = 0; j < m2; j += blockSize) {
-//       for (int k = 0; k < m1; k += blockSize) {
-//         for (int ii = i; ii < min(i + blockSize, n1); ++ii) {
-//           for (int jj = j; jj < min(j + blockSize, m2); ++jj) {
-//             for (int kk = k; kk < min(k + blockSize, m1); ++kk) {
-//               C[ii][jj] += A[ii][kk] * B[kk][jj];
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   return C;
-// }
-
-
 vector<vector<int>> blocked(vector<vector<int>> A, vector<vector<int>> B, int blockSize) {
   int size = A.size();
   vector<vector<int>> C(size, vector<int>(size, 0));
